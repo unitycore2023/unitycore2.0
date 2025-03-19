@@ -22,12 +22,13 @@
             align-items: center;
             justify-content: space-between;
         }
-        .menu img {
-            height: 80px;
-        }
         .menu .menu-links {
             display: flex;
-            gap: 15px;
+            gap: 30px;
+            margin: 0 auto;
+        }
+        .menu img {
+            height: 80px;
         }
         .menu a {
             color: white;
@@ -44,18 +45,15 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 20px;
             padding-top: 120px;
+            gap: 20px;
         }
         .images-container img {
-            width: 90%;
-            max-width: 500px;
+            width: 45%;
+            max-width: 600px;
             height: 300px;
             object-fit: cover;
             border-radius: 10px;
-        }
-        .images-container img:first-child {
-            max-width: 520px; /* Hace la imagen izquierda más grande */
         }
         /* Sección de texto explicativo */
         .description-container {
@@ -71,7 +69,7 @@
         /* Título */
         .title-container {
             text-align: center;
-            margin-top: 40px;
+            margin-top: 20px;
         }
         h1 {
             background-color: #222;
@@ -98,30 +96,19 @@
             border-radius: 10px;
             box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
         }
-        .grid-item h2 {
-            margin: 0;
-            font-size: 18px;
-        }
-        .grid-item p {
-            margin-top: 10px;
-            font-size: 14px;
-            color: #ddd;
-        }
         /* Ajustes responsivos */
         @media (max-width: 768px) {
             .menu {
                 flex-direction: column;
                 align-items: center;
-                text-align: center;
-            }
-            .menu img {
-                height: 60px;
-                margin-bottom: 10px;
             }
             .menu .menu-links {
                 flex-wrap: wrap;
                 justify-content: center;
                 gap: 10px;
+            }
+            .menu img {
+                height: 60px;
             }
             .images-container {
                 flex-direction: column;
@@ -129,11 +116,6 @@
             }
             .grid-container {
                 grid-template-columns: 1fr;
-            }
-        }
-        @media (max-width: 1024px) {
-            .grid-container {
-                grid-template-columns: repeat(2, 1fr);
             }
         }
     </style>
@@ -155,43 +137,25 @@
         <img src="0d979dd0-d06a-4e46-beff-e3261e7856b6.jpg.png" alt="Universidad">
         <img src="maxresdefault.jpg" alt="Imagen secundaria">
     </div>
-
-    <div class="title-container">
+        <div class="title-container">
         <h1>¿Quiénes somos?</h1>
     </div>
 
     <!-- Sección de descripción -->
     <div class="description-container">
-        <p>Somos el Centro de Alumnos UnityCore2.0 2024-2025 de la carrera en Ingeniería en Realidad Virtual y Diseño de Juegos Digitales en la Universidad Bernardo O’Higgins.</p>
+        <p>Somos el Centro de Alumnos UnityCore2.0 2024-2025 de la carrera en Ingenieria en Realidad Virtual y Diseño de Juegos Digitales en la Universidad Bernardo O´Higgins</p>
     </div>
 
     <!-- Sección de los cuadraditos -->
     <div class="grid-container">
-        <div class="grid-item">
-            <h2>Diego Mendoza</h2>
-            <p>"Frase inspiradora de Diego Mendoza."</p>
-        </div>
-        <div class="grid-item">
-            <h2>Kristal Espinoza</h2>
-            <p>"Frase inspiradora de Kristal Espinoza."</p>
-        </div>
-        <div class="grid-item">
-            <h2>Diego Yupanqui</h2>
-            <p>"Frase inspiradora de Diego Yupanqui."</p>
-        </div>
-        <div class="grid-item">
-            <h2>Lucas Soto</h2>
-            <p>"Frase inspiradora de Lucas Soto."</p>
-        </div>
-        <div class="grid-item">
-            <h2>Yazmin Contreras</h2>
-            <p>"Frase inspiradora de Yazmin Contreras."</p>
-        </div>
-        <div class="grid-item">
-            <h2>Flammy Contreras</h2>
-            <p>"Frase inspiradora de Flammy Contreras."</p>
-        </div>
+        <div class="grid-item">Diego Mendoza "Frase"</div>
+        <div class="grid-item">Kristal Espinoza "Frase"</div>
+        <div class="grid-item">Diego Yupanqui "Frase"</div>
+        <div class="grid-item">Lucas Soto "Frase"</div>
+        <div class="grid-item">Yazmin Contreras "Frase"</div>
+        <div class="grid-item">Flammy Contreras "Frase"</div>
     </div>
 
 </body>
 </html>
+
