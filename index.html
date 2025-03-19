@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UnityCore2.0</title>
+    <title>UnityCore2023</title>
     <style>
         body {
             background-color: black;
@@ -13,12 +13,20 @@
         .menu {
             width: 100%;
             background-color: #111;
-            padding: 10px 0;
+            padding: 10px 20px;
             position: fixed;
             top: 0;
             left: 0;
             display: flex;
-            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .menu .menu-links {
+            display: flex;
+            gap: 15px;
+        }
+        .menu img {
+            height: 50px;
         }
         .menu a {
             color: white;
@@ -33,14 +41,14 @@
 </head>
 <body>
     <div class="menu">
-        <a href="#">Inicio</a>
-        <a href="#">Juegos</a>
-        <a href="#">Eventos</a>
-        <a href="#">Noticias</a>
-        <a href="#">Contacto</a>
+        <div class="menu-links">
+            <a href="#">Inicio</a>
+            <a href="#">Juegos</a>
+            <a href="#">Eventos</a>
+            <a href="#">Noticias</a>
+            <a href="#">Contacto</a>
         </div>
         <img src="https://raw.githubusercontent.com/TU_USUARIO/TU_REPOSITORIO/main/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(2).png" alt="Logo">
-    </div>
     </div>
 </body>
 </html>
