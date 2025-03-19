@@ -9,6 +9,7 @@
             background-color: black;
             margin: 0;
             font-family: Arial, sans-serif;
+            color: white;
         }
         .menu {
             width: 100%;
@@ -41,13 +42,18 @@
         .images-container {
             display: flex;
             justify-content: space-around;
-            padding-top: 120px; /* Para que no quede debajo del menú fijo */
+            padding-top: 120px;
         }
         .images-container img {
-            width: 50%;  /* Ambas imágenes tendrán el mismo ancho */
-            height: 400px; /* Altura fija para ambas imágenes */
-            object-fit: cover; /* Recorta la imagen manteniendo la proporción */
+            width: 50%;
+            height: 400px;
+            object-fit: cover;
             border-radius: 10px;
+        }
+        /* Estilo para el título */
+        .title-container {
+            text-align: center;
+            margin-top: 40px; /* Separación del bloque de imágenes */
         }
         h1 {
             background-color: #222;
@@ -59,6 +65,21 @@
             border-radius: 10px;
             width: 80%;
             margin: auto;
+        }
+        /* Estilo para los cuadraditos */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            width: 80%;
+            margin: 30px auto;
+            text-align: center;
+        }
+        .grid-item {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
         }
     </style>
 </head>
@@ -76,11 +97,24 @@
 
     <!-- Contenedor para las imágenes -->
     <div class="images-container">
-        <img src="centro.jpg" alt="Universidad">
+        <img src="0d979dd0-d06a-4e46-beff-e3261e7856b6.jpg.png" alt="Universidad">
         <img src="maxresdefault.jpg" alt="Imagen secundaria">
     </div>
 
-    <h1>¿Quiénes somos?</h1>
+    <!-- Sección de "¿Quiénes somos?" -->
+    <div class="title-container">
+        <h1>¿Quiénes somos?</h1>
+    </div>
+
+    <!-- Sección de los cuadraditos -->
+    <div class="grid-container">
+        <div class="grid-item">Desarrollo de videojuegos</div>
+        <div class="grid-item">Realidad virtual</div>
+        <div class="grid-item">Eventos tecnológicos</div>
+        <div class="grid-item">Innovación</div>
+        <div class="grid-item">Trabajo en equipo</div>
+        <div class="grid-item">Aprendizaje continuo</div>
+    </div>
 
 </body>
 </html>
