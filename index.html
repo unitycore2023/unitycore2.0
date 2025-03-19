@@ -19,19 +19,15 @@
             top: 0;
             left: 0;
             display: flex;
-            flex-direction: column;
             align-items: center;
-            text-align: center;
+            justify-content: space-between;
         }
         .menu img {
             height: 80px;
-            margin-bottom: 10px;
         }
         .menu .menu-links {
             display: flex;
             gap: 15px;
-            flex-wrap: wrap;
-            justify-content: center;
         }
         .menu a {
             color: white;
@@ -57,6 +53,9 @@
             height: 300px;
             object-fit: cover;
             border-radius: 10px;
+        }
+        .images-container img:first-child {
+            max-width: 520px; /* Hace la imagen izquierda más grande */
         }
         /* Sección de texto explicativo */
         .description-container {
@@ -111,10 +110,13 @@
         /* Ajustes responsivos */
         @media (max-width: 768px) {
             .menu {
-                padding: 15px;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
             }
             .menu img {
                 height: 60px;
+                margin-bottom: 10px;
             }
             .menu .menu-links {
                 flex-wrap: wrap;
