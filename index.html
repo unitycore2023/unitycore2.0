@@ -37,6 +37,28 @@
         .menu a:hover {
             background-color: #575757;
         }
+        /* Estilo para las imágenes en la sección del body */
+        .images-container {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 120px; /* para que no quede debajo del menú fijo */
+        }
+        .images-container img {
+            max-width: 45%;
+            height: auto;
+            border-radius: 10px;
+        }
+        h1 {
+            background-color: #222;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            width: 80%;
+            margin: auto;
+        }
     </style>
 </head>
 <body>
@@ -47,20 +69,17 @@
             <a href="#">Eventos</a>
             <a href="#">Noticias</a>
             <a href="#">Contacto</a>
-                  </div>
+        </div>
         <img src="Dise%C3%B1o%20sin%20t%C3%ADtulo%20(4).png" alt="Logo">
-      
     </div>
-</body>
-      
-       <img src="Diseño sin título.jpg" alt="Universidad" width="100%" height="500">
-    <head>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <h1 style="background-color: #222; color: white; font-family: 'Montserrat', sans-serif; font-size: 20px; padding: 20px; text-align: center; border-radius: 10px; width: 80%; margin: auto;">
-    ¿Quiénes somos?
-  </h1>
-</body>
 
+    <!-- Contenedor para las imágenes -->
+    <div class="images-container">
+        <img src="Diseño sin título.jpg" alt="Universidad">
+        <img src="maxresdefault.jpg" alt="Imagen secundaria">
+    </div>
+
+    <h1>¿Quiénes somos?</h1>
+
+</body>
 </html>
