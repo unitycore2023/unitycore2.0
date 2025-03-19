@@ -20,56 +20,70 @@
             left: 0;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
         }
         .menu .menu-links {
             display: flex;
-            gap: 30px;
+            gap: 15px;
         }
         .menu img {
-            height: 100px;
+            height: 80px;
         }
         .menu a {
             color: white;
-            padding: 30px 40px;
+            padding: 15px 20px;
             text-decoration: none;
             transition: 0.3s;
+            font-size: 16px;
         }
         .menu a:hover {
             background-color: #575757;
         }
-        /* Estilo para las imágenes en la sección del body */
+        /* Estilo para las imágenes */
         .images-container {
             display: flex;
             justify-content: space-around;
+            flex-wrap: wrap;
             padding-top: 120px;
         }
         .images-container img {
-            width: 50%;
-            height: 400px;
+            width: 90%;
+            max-width: 600px;
+            height: 300px;
             object-fit: cover;
             border-radius: 10px;
+            margin: 10px;
         }
-        /* Estilo para el título */
+        /* Sección de texto explicativo */
+        .description-container {
+            width: 80%;
+            margin: 40px auto;
+            text-align: center;
+        }
+        .description-container p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #ddd;
+        }
+        /* Título */
         .title-container {
             text-align: center;
-            margin-top: 40px; /* Separación del bloque de imágenes */
+            margin-top: 20px;
         }
         h1 {
             background-color: #222;
             color: white;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 20px;
+            font-size: 22px;
             padding: 20px;
             text-align: center;
             border-radius: 10px;
             width: 80%;
             margin: auto;
         }
-        /* Estilo para los cuadraditos */
+        /* Cuadrícula de información */
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
             width: 80%;
             margin: 30px auto;
@@ -81,10 +95,33 @@
             border-radius: 10px;
             box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
         }
+        /* Ajustes responsivos */
+        @media (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+                align-items: center;
+            }
+            .menu .menu-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+            .menu img {
+                height: 60px;
+            }
+            .images-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="menu">
+        <img src="Dise%C3%B1o%20sin%20t%C3%ADtulo%20(4).png" alt="Logo">
         <div class="menu-links">
             <a href="#">Inicio</a>
             <a href="#">Juegos</a>
@@ -92,7 +129,6 @@
             <a href="#">Noticias</a>
             <a href="#">Contacto</a>
         </div>
-        <img src="Dise%C3%B1o%20sin%20t%C3%ADtulo%20(4).png" alt="Logo">
     </div>
 
     <!-- Contenedor para las imágenes -->
@@ -100,21 +136,27 @@
         <img src="0d979dd0-d06a-4e46-beff-e3261e7856b6.jpg.png" alt="Universidad">
         <img src="maxresdefault.jpg" alt="Imagen secundaria">
     </div>
-
-    <!-- Sección de "¿Quiénes somos?" -->
-    <div class="title-container">
+        <div class="title-container">
         <h1>¿Quiénes somos?</h1>
     </div>
 
+    <!-- Sección de descripción -->
+    <div class="description-container">
+        <p>Somos el Centro de Alumnos UnityCore2.0 2024-2025 de la carrera en Ingenieria en Realidad Virtual y Diseño de Juegos Digitales en la Universidad Bernardo O´Higgins</p>
+    </div>
+
+    <!-- Sección de "¿Quiénes somos?" -->
+
     <!-- Sección de los cuadraditos -->
     <div class="grid-container">
-        <div class="grid-item">Desarrollo de videojuegos</div>
-        <div class="grid-item">Realidad virtual</div>
-        <div class="grid-item">Eventos tecnológicos</div>
-        <div class="grid-item">Innovación</div>
-        <div class="grid-item">Trabajo en equipo</div>
-        <div class="grid-item">Aprendizaje continuo</div>
+        <div class="grid-item">Diego Mendoza "Frase"</div>
+        <div class="grid-item">Kristal Espinoza "Frase"</div>
+        <div class="grid-item">Diego Yupanqui "Frase"</div>
+        <div class="grid-item">Lucas Soto "Frase"</div>
+        <div class="grid-item">Yazmin Contreras "Frase"</div>
+        <div class="grid-item">Flammy Contreras "Frase"</div>
     </div>
 
 </body>
 </html>
+
